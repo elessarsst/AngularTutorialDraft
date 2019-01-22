@@ -6,6 +6,7 @@
   <div *ngSwitchCase="'map'">Map View Content</div>
   <div *ngSwitchCase="'list'">List View Content</div>
   <div *ngSwitchDefault>Otherwise</div>
+
 </div>
 <p></p>
 <button class="btn btn-primary btn-space" (click)="onAdd()">add</button>
@@ -25,4 +26,10 @@
 </ul>
 
 <span>{{ task?.asignee?.name }}</span>
+
+<input type="text" [appInputFormat]="'uppercase'"/>
+
+<app-contact-form></app-contact-form>
+
+<app-signup-form></app-signup-form>
 <router-outlet></router-outlet>

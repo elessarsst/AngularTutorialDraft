@@ -15,7 +15,6 @@ export class AppComponent {
     }
   };
   onAdd() {
-
     this.courses.push({ id: (this.courses.length + 1), name: 'course ' + (this.courses.length + 1)});
   }
 
